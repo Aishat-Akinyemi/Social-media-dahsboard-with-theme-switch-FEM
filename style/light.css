@@ -2,6 +2,9 @@
   .dashboard {    
     flex-direction: column;
   }
+  .box1, .box2 {
+    margin:10px 0 !important;
+  }
 .overview {
   display: flex !important;
   flex-direction: column;
@@ -83,16 +86,20 @@ display: flex;
 }
 
 .FBfollowers {
-  border-top: 5px solid hsl(195, 100%, 50%)
+  border-top: 5px solid hsl(195, 100%, 50%);
 }
 
 .TWfollowers {
-  border-top: 5px solid hsl(203, 89%, 53%);
+  border-top: 5px solid hsl(203, 89%, 53%);  
 }
 
 .YTfollowers {
-  border-top: 5px solid hsl(348, 97%, 39%);
+  border-top: 5px solid hsl(348, 97%, 39%);  
 }
+.IGfollowers, .TWfollowers, .FBfollowers {
+  margin-right: 30px;
+}
+
 .IG{
   background:  linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));;
   height: 5px;
@@ -100,7 +107,7 @@ display: flex;
   margin-top: 0px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border-color: hsl(0, 0%, 100%); ;
+  border-color: hsl(0, 0%, 100%); 
   
 }
 
