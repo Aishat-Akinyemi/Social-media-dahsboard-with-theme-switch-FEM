@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link id="styleSheetName" rel="stylesheet" href="./style/light.css">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+<body>
+
+<header>
+  <h1>Social Media Dashboard</h1>
+  <span class="subheading-cont">
+  <div class="subheading DM">Total Followers: 23,004</div> 
+
+  <span class="darkMode"><span class="DM">Dark Mode</span>
+    <label class="switch">
+        <input id="switch-input" class="switch-input" type="checkbox" onclick="switchMode()" />
+        <span class="switch-label" ></span> 
+        <span class="switch-handle"></span> 
+    </label>
+</span>
+</span>
+</header>
+  
+
+<section class="dashboard">
+<article class="box1 FBfollowers">
+   <img class="icon" src="images/icon-facebook.svg" alt="facebook icon"> <p class="username"> @nathanf</p> 
+   <p class="followersByNumber"> 1987</p>
+    <p class="followers">FOLLOWERS</p>
+    <p class="increase"> <img class="arrow" src="images/icon-up.svg" alt="arrow up"> 12 Today</p>
+</article>
+  
+<article class="box1 TWfollowers">
+    <p class="username"><img class="icon" src="images/icon-twitter.svg" alt="twitter icon"> @nathanf</p>
+    <p class="followersByNumber"> 1044</p>
+    <p class="followers">FOLLOWERS</p>
+    <p class="increase"> <img class="arrow" src="images/icon-up.svg" alt="arrow up">99 Today</p>
+</article>
+ 
+<article class="box1 IGfollowers">
+    <hr class="IG">
+    <span>
+    <p class="username"><img class="icon" src="images/icon-instagram.svg" alt="instagram icon"> @realnathanf</p>
+    <p class="followersByNumber"> 11k</p>
+    <p class="followers">FOLLOWERS</p>
+    <p class="increase"> <img class="arrow" src="images/icon-up.svg" alt="arrow up">1099 Today</p>
+    </span>
+</article>
+ 
+<article class="box1 YTfollowers">
+    <p class="username"><img class="icon" src="images/icon-youtube.svg" alt="youtube icon">Nathan F.</p>
+    <p class="followersByNumber">8239</p>
+    <p class="followers">SUBSCRIBERS</p>
+    <p class="decrease"> <img class="arrow" src="images/icon-down.svg" alt="arrow down">144 Today</p>
+</article>
+</section>   
+
+<h2>Overview - Today</h2>
+<section class="overview"> 
+<article class="box2">
+    <p class="interaction">Page Views</p>
+    <img src="images/icon-facebook.svg" alt="">
+    <p class="daily-num">87</p>
+    <p class="increase daily-perc"> <img class="arrow" src="images/icon-up.svg" alt="arrow up">3%</p>
+</article>
+  
+<article class="box2">
+    <p class="interaction">Likes</p>
+    <img src="images/icon-facebook.svg" alt="">
+    <p class="daily-num">52</p>
+    <p class="decrease daily-perc"> <img class="arrow" src="images/icon-down.svg" alt="arrow down">2%</p>    
+</article>
+
+<article class="box2">
+    <p class="interaction">Likes</p>
+    <img src="images/icon-instagram.svg" alt="">
+    <p class="daily-num">5462</p>
+    <p class="increase daily-perc"> <img class="arrow" src="images/icon-up.svg" alt="arrow up">2257%</p>
+</article>
+
+<article class="box2">
+    <p class="interaction">Profile Views</p>
+    <img src="images/icon-instagram.svg" alt="">
+    <p class="daily-num">52k</p>
+    <p class="increase daily-perc"> <img class="arrow" src="images/icon-up.svg" alt="arrow up">1375%</p>
+</article>
+
+<article class="box2">
+    <p class="interaction">Retweets</p>
+    <img src="images/icon-twitter.svg" alt="">
+    <p class="daily-num"> 117</p>
+    <p class="increase daily-perc"> <img class="arrow" src="images/icon-up.svg" alt="arrow up">303%</p>
+</article>
+
+<article class="box2">
+    <p class="interaction">Likes</p>
+    <img src="images/icon-twitter.svg" alt="">
+    <p class="daily-num">507</p>
+    <p class="increase daily-perc"> <img class="arrow" src="images/icon-up.svg" alt="arrow up">553%</p>
+</article>
+
+<article class="box2">
+    <p class="interaction">Likes</p>
+    <img src="images/icon-youtube.svg" alt="">
+    <p class="daily-num">107</p>
+    <p class="decrease daily-perc"> <img class="arrow" src="images/icon-down.svg" alt="arrow down">19%</p>
+</article>
+
+<article class="box2">
+    <p class="interaction">Total Views</p>
+    <img src="images/icon-twitter.svg" alt="">
+    <p class="daily-num">1407</p>
+    <p class="decrease daily-perc"> <img class="arrow" src="images/icon-down.svg" alt="arrow down">12%</p>
+</article>
+</section>
+  <article class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aishat Akinyemi</a>.
+  </article> 
+</body>
+<script>
+    function switchMode() {
+    let darkMode = document.getElementById("switch-input");
+    if (darkMode) {
+        let styleSheetName = document.getElementById("styleSheetName");
+        if (styleSheetName.getAttribute("href") == "./style/light.css") {
+            styleSheetName.setAttribute("href", "./style/dark.css");
+        }
+        else if (styleSheetName.getAttribute("href") == "./style/dark.css") {
+            styleSheetName.setAttribute("href", "./style/light.css");
+        }
+    }
+    }
+</script>
+</html>
