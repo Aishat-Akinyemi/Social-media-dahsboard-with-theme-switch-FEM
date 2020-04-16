@@ -134,6 +134,11 @@ display: flex;
   border-radius: 10px; 
 }
 
+.box1:hover, .box2:hover {
+  cursor: pointer;
+ background-color: hsl(220, 54%, 92%);
+}
+
 .box1 {
   flex: 1;
 }
